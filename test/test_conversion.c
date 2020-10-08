@@ -5,18 +5,18 @@
 #define PROJECT_NAME    "number_conversion"
 
 /* Prototypes for all the test functions */
-        long int Bin_to_Dec(long int);
-	long int Bin_to_Oct(long int);
-	long int Bin_to_Hex(long int);
-	long int Dec_to_Bin(long int);
-	long int Dec_to_Oct(long int);
-	long int Dec_to_Hex(long int);
-	long int Oct_to_Bin(long int);
-	long int Oct_to_Dec(long int);
-	long int Oct_to_Hex(long int);
-	void Hex_to_Bin(char []);
-    void Hex_to_Dec(char []);
-    void Hex_to_Oct(char []);
+long int Bin_to_Dec(long int);
+long int Bin_to_Oct(long int);
+long int Bin_to_Hex(long int);
+long int Dec_to_Bin(long int);
+long int Dec_to_Oct(long int);
+long int Dec_to_Hex(long int);
+long int Oct_to_Bin(long int);
+long int Oct_to_Dec(long int);
+long int Oct_to_Hex(long int);
+void Hex_to_Bin(char []);
+void Hex_to_Dec(char []);
+void Hex_to_Oct(char []);
 
 /* Start of the application test */
 int main() {
@@ -56,23 +56,18 @@ void test_Bin_to_Dec(void) {
   CU_ASSERT(1==Bin_to_Oct(0001));
  }
   
-void test_Bin_to_Hex(void)
-    {
-                 CU_ASSERT('A'==Bin_to_Hex(1010));
+void test_Bin_to_Hex(void){
+  CU_ASSERT('A'==Bin_to_Hex(1010));
     }
- void test_Dec_to_Bin(void)
-    {
-                 CU_ASSERT(0001==Dec_to_Bin(1));
+ void test_Dec_to_Bin(void) {
+  CU_ASSERT(0001==Dec_to_Bin(1));
     }
- void test_Dec_to_Hex(void)
-    {
-                 CU_ASSERT('A'==Dec_to_Hex(10));
+ void test_Dec_to_Hex(void){
+  CU_ASSERT('A'==Dec_to_Hex(10));
     }
-     void test_Oct_to_Bin(void)
-    {
-                 CU_ASSERT(1==Oct_to_Bin(1));
+     void test_Oct_to_Bin(void){
+  CU_ASSERT(1==Oct_to_Bin(1));
     }
-     void test_Oct_to_Hex(void)
-    {
-                CU_ASSERT('A'==Oct_to_Hex(12));
+     void test_Oct_to_Hex(void){
+  CU_ASSERT('A'==Oct_to_Hex(12));
     }
